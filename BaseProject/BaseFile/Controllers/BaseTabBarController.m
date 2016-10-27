@@ -28,6 +28,10 @@
 } 
 
 - (void)commonInit {
+    // 主题
+    UITabBar *appearance = [UITabBar appearance];
+    appearance.tintColor = COLOR_NAV_BACKGROUND;
+    
     // Controllers
     HomePageController *homeVc = [[HomePageController alloc] init];
     BaseNavigationController *homeNav = [[BaseNavigationController alloc] initWithRootViewController:homeVc];
@@ -62,10 +66,6 @@
                                      forState:UIControlStateSelected]; // 设置Item选中颜色
         [vc.tabBarItem setTitlePositionAdjustment: UIOffsetMake(0, -3)];
     }
-    
-    // 主题
-    UITabBar *appearance = [UITabBar appearance];
-    appearance.tintColor = COLOR_NAV_BACKGROUND;
 }
 
 @end

@@ -16,7 +16,6 @@
 
 @implementation AppDelegate
 
-
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc] initWithFrame:SCREEN_BOUNDS];
     RootViewController *rootVc = [[RootViewController alloc] init];
@@ -28,30 +27,24 @@
     return YES;
 }
 
-
 - (void)applicationWillResignActive:(UIApplication *)application {
     
 }
-
 
 - (void)applicationDidEnterBackground:(UIApplication *)application {
     
 }
 
-
 - (void)applicationWillEnterForeground:(UIApplication *)application {
     
 }
-
 
 - (void)applicationDidBecomeActive:(UIApplication *)application {
     
 }
 
-
 - (void)applicationWillTerminate:(UIApplication *)application {
     
 }
-
 
 @end

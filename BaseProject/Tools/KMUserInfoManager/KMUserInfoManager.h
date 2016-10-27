@@ -4,7 +4,7 @@
 //
 //  Created by wujianming on 16/6/1.
 //  Copyright © 2016年 szteyou. All rights reserved.
-//
+//  用户信息管理类
 
 #import <Foundation/Foundation.h>
 #import "KMUserInfo.h"

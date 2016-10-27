@@ -91,7 +91,7 @@
         // 根控制器自定义bar初始化
         BaseViewController *rootVc = (BaseViewController *)rootViewController;
         [rootViewController.view addSubview:rootVc.km_navigationBar];
-        
+        // 统一设置返回导航左键
         rootViewController.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithImageName:@"option" title:nil target:self action:@selector(show) contentMode:UIControlContentHorizontalAlignmentLeft];
     }
     
@@ -99,8 +99,7 @@
 }
 
 - (void)show {
-    RootViewController *rootVc = (RootViewController *)ROOT_VIEW_CONTROLLER;
-    [rootVc openLeftViewWithStatus:YES animation:YES];
+    [GlobelHelper showLeftView];
 }
 
 - (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated {
