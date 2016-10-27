@@ -1,0 +1,27 @@
+//
+//  PrefixHeader.pch
+//  BaseProject
+//
+//  Created by wujianming on 16/9/21.
+//  Copyright © 2016年 szteyou. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import "AFNetworking.h"
+#import "MJExtension.h"
+#import "Masonry.h"
+#import "MJRefresh.h"
+
+#import "CommonFile.h"
+#import "Category.h"
+
+#import "BaseViewController.h"
+#import "BaseTableViewController.h"
+#import "BaseTableViewCell.h"
+#import "KMRefresh.h"
+#import "GlobelHelper.h"
+#import "AFNApiConfig.h"
+
+#endif /* PrefixHeader_pch */
