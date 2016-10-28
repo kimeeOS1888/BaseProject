@@ -9,6 +9,8 @@
 #import "HomePageController.h"
 // 彩蛋控制器
 #import "WIFISetupHelper.h"
+// 条形码
+#import "KMCodeManager.h"
 
 @interface HomePageController ()
 
@@ -30,6 +32,12 @@
     
     // 彩蛋入口
     self.navigationItem.rightBarButtonItem = [UIBarButtonItem itemWithImageName:@"WIFISetup" title:nil target:self action:@selector(wifiSetup) contentMode:UIControlContentHorizontalAlignmentRight];
+    
+    // 条形码生成
+    UIImage *code = [KMCodeManager generateBarCode:@"8564565685955323" size:(CGSize){200, 80} color:nil backGroundColor:nil];
+    UIImageView *codeView = [[UIImageView alloc] initWithFrame:(CGRect){0,150,200,80}];
+    codeView.image = code;
+    [self.view addSubview:codeView];
 }
 
 - (void)wifiSetup {

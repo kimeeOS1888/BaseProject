@@ -47,5 +47,7 @@
 - (NSString *)stringToBase64;
 // 检测字符串是否包含emoji👀表情
 + (BOOL)stringContainsEmoji:(NSString *)string;
+// 每4个字符间加2空格
++ (NSString *)formatSpace:(NSString *)Space;
 
 @end

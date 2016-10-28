@@ -34,6 +34,7 @@
 		205C851A1DABA51700A0BC29 /* KMUserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 205C850A1DABA51700A0BC29 /* KMUserInfo.m */; };
 		205C851B1DABA51700A0BC29 /* KMUserInfoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 205C850C1DABA51700A0BC29 /* KMUserInfoManager.m */; };
 		205C851D1DABA8DA00A0BC29 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 205C851C1DABA8DA00A0BC29 /* Assets.xcassets */; };
+		206ECC121DC2EE2500EE713A /* KMCodeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 206ECC111DC2EE2500EE713A /* KMCodeManager.m */; };
 		2089927B1DAF6E63004314A8 /* KMMainframeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 208992781DAF6E63004314A8 /* KMMainframeViewController.m */; };
 		2089927C1DAF6E63004314A8 /* UIViewController+KMMainframe.m in Sources */ = {isa = PBXBuildFile; fileRef = 2089927A1DAF6E63004314A8 /* UIViewController+KMMainframe.m */; };
 		208992801DAF6F24004314A8 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2089927F1DAF6F24004314A8 /* RootViewController.m */; };
@@ -116,6 +117,8 @@
 		205C850B1DABA51700A0BC29 /* KMUserInfoManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMUserInfoManager.h; sourceTree = "<group>"; };
 		205C850C1DABA51700A0BC29 /* KMUserInfoManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KMUserInfoManager.m; sourceTree = "<group>"; };
 		205C851C1DABA8DA00A0BC29 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		206ECC101DC2EE2500EE713A /* KMCodeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMCodeManager.h; sourceTree = "<group>"; };
+		206ECC111DC2EE2500EE713A /* KMCodeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KMCodeManager.m; sourceTree = "<group>"; };
 		208992771DAF6E63004314A8 /* KMMainframeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMMainframeViewController.h; sourceTree = "<group>"; };
 		208992781DAF6E63004314A8 /* KMMainframeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KMMainframeViewController.m; sourceTree = "<group>"; };
 		208992791DAF6E63004314A8 /* UIViewController+KMMainframe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+KMMainframe.h"; sourceTree = "<group>"; };
@@ -394,6 +397,7 @@
 				205C84E61DABA51700A0BC29 /* AFNetWorkTool */,
 				205C84EE1DABA51700A0BC29 /* KMCustomRefresh */,
 				205C85081DABA51700A0BC29 /* KMUserInfoManager */,
+				206ECC0F1DC2EE2500EE713A /* KMCodeManager */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -435,6 +439,15 @@
 				205C850C1DABA51700A0BC29 /* KMUserInfoManager.m */,
 			);
 			path = KMUserInfoManager;
+			sourceTree = "<group>";
+		};
+		206ECC0F1DC2EE2500EE713A /* KMCodeManager */ = {
+			isa = PBXGroup;
+			children = (
+				206ECC101DC2EE2500EE713A /* KMCodeManager.h */,
+				206ECC111DC2EE2500EE713A /* KMCodeManager.m */,
+			);
+			path = KMCodeManager;
 			sourceTree = "<group>";
 		};
 		208992761DAF6E63004314A8 /* KMMainframe */ = {
@@ -665,6 +678,7 @@
 				208D42391DB4B7AC00C1AFA2 /* HomePageController.m in Sources */,
 				20F4B1211D93C4A70098D5E5 /* TYDistributionCell.m in Sources */,
 				20141A041D92418500737C2B /* AppDelegate.m in Sources */,
+				206ECC121DC2EE2500EE713A /* KMCodeManager.m in Sources */,
 				205C850D1DABA51700A0BC29 /* AFNBaseModel.m in Sources */,
 				20141A2C1D92439500737C2B /* BaseViewController.m in Sources */,
 				205C84A61DAB4E2E00A0BC29 /* UIView+Ex.m in Sources */,

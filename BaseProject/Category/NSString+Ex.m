@@ -277,4 +277,27 @@
     return returnValue;
 }
 
+// 每隔4个字符空两格
++ (NSString *)formatSpace:(NSString *)Space {
+    NSMutableArray *chars = [[NSMutableArray alloc] init];
+    
+    for (int i = 0, j = 0 ; i < [Space length]; i++, j++) {
+        [chars addObject:[NSNumber numberWithChar:[Space characterAtIndex:i]]];
+        if (j == 3) {
+            j = -1;
+            [chars addObject:[NSNumber numberWithChar:' ']];
+            [chars addObject:[NSNumber numberWithChar:' ']];
+        }
+    }
+    
+    int length = (int)[chars count];
+    char str[length];
+    for (int i = 0; i < length; i++) {
+        str[i] = [chars[i] charValue];
+    }
+    
+    NSString *temp = [NSString stringWithUTF8String:str];
+    return temp;
+}
+
 @end
